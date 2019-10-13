@@ -97,6 +97,14 @@ service InstitutionService on staffServer {
     }
     resource function getOfficers (http:Caller caller, http:Request req, string uuid) returns error? {
         // return all officers where officer.insitutionUUID == uuid
+
+        // check whether institution uuid is legit
+        if findInstitution(<@untainted>uuid) is () {
+            http:Response hr = new;
+            hr.statusCode = 404;
+            return check caller->respond(hr);
+        }
+
         json[] ofs = [];
         officers.forEach(function (Officer of) { 
             if (of.position.instituteUuid == uuid) { 
