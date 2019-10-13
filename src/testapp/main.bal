@@ -37,43 +37,43 @@ public function main() returns error? {
 
     // add an officer to i1uuid
     Officer o = {
-        idNumber: "6303651235v",
-        nameWithInitials: "B. S. Podisingho",
+        idNumber: "201000151616x",
+        nameWithInitials: "John Smith",
         dob: {
-            year: 1963,
+            year: 2001,
             month: 12,
             day: 31
         },
-        gender: <Gender> "F",
+        gender: <Gender> "M",
         address: { 
-            line1: "19 Boru Para",
-            line2: "Wattala"
+            line1: "1 Serious Road",
+            line2: "මඩකලපුව"
         },
-        mobilePhone: "077-777-6631",
-        homePhone: "008-613-1361",
-        email: "podisngiht@koskatta.lk",
+        mobilePhone: "077-888-6631",
+        homePhone: "018-888-1361",
+        email: "john@mada.lk",
         emergencyContact: {
-            name: "X. DeadMan",
-            phone: "033-901-6141"
+            name: "Daddy be There",
+            phone: "011-888-6141"
         },
-        pollingStationId: "AB-136",
-        preferredDistrictIds: ["Matara", "Colombo", "Chilaw", "Jaffna", "Gampaha"],
+        pollingStationId: "BB-987",
+        preferredDistrictIds: ["Batticoloar", "Colombo", "Chilaw", "Jaffna", "Gampaha"],
         position: {
             instituteUuid: i1uuid,
-            post: "Technical Officer Grade I",
+            post: "Nikang Boss",
             postNature: {
                 fieldBased: false,
                 officeBased: true
             },
-            serviceName: "Boru Service",
+            serviceName: "Maara Service",
             serviceStartDate: {
                 year: 1995,
                 month: 1,
                 day: 1
             },
             grade: "A3",
-            salaryCode: "C5",
-            basicMonthlySalary: 94000
+            salaryCode: "C15",
+            basicMonthlySalary: 49411
         },
         previousPositions: [],
         previousDuties: [],
